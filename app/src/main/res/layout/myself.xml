@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:background="#EBEBEB"
+    android:layout_height="match_parent"
+    tools:context="com.sina.weibo.sdk.demo.Test"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+
+        android:id="@+id/information_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp">
+
+        <ImageView
+            android:id="@+id/myPicture"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="29dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true" />
+
+        <RelativeLayout
+            android:id="@+id/name_Layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/myPicture"
+            android:visibility="visible">
+
+            <TextView
+                android:id="@+id/myName"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_alignParentTop="true"
+                android:gravity="center"
+                android:hint="candyTong"
+                android:text="candy"
+                android:textSize="28dp" />
+
+            <ImageButton
+                android:id="@+id/setting"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignRight="@+id/myName"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/picture" />
+        </RelativeLayout>
+
+
+        <TextView
+            android:id="@+id/myInformation"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@+id/name_Layout"
+            android:layout_marginBottom="10dp"
+            android:gravity="center"
+            android:hint="这家伙很懒，什么都没留下" />
+    </RelativeLayout>
+
+    <TextView
+        android:singleLine="true"
+        android:id="@+id/tv_desc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="8dp"
+        android:paddingBottom="4dp"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp"
+        android:paddingTop="4dp" />
+
+        <com.sina.weibo.sdk.demo.LineItem
+            android:id="@+id/line_item"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            app:text="我的微博"
+            />
+
+    <com.sina.weibo.sdk.demo.LineItem
+        android:id="@+id/line_item2"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        app:text="我的主页"
+         />
+
+    <com.sina.weibo.sdk.demo.LineItem
+        android:id="@+id/line_item3"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        app:text="我的收藏"
+        />
+
+</LinearLayout>
